@@ -60,6 +60,19 @@ header #navbar .nav-list .nav-item a:hover {
   transition: 0.3s;
 }
 
+header #navbar .hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  header #navbar .hamburger-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
 /** SECTION BANNER */
 
 main {
@@ -167,4 +180,10 @@ section#posts {
   font-weight: 400;
   margin-bottom: 1.5rem;
   display: block;
+}
+
+@media (max-width: 740px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
 }
